@@ -1,3 +1,4 @@
+
 export const NAVBAR_LIST = [
   { name: "Home", link: "#home" },
   { name: "Story", link: "#story" },
@@ -6,3 +7,5 @@ export const NAVBAR_LIST = [
   { name: "Team", link: "#team" },
   { name: "FAQs", link: "#faqs" },
 ];
+
+
