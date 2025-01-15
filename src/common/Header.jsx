@@ -40,7 +40,7 @@ const Header = () => {
               <a
                 href={obj.link}
                 onClick={handler}
-                className="text-[22px] leading-[25px] font-normal text-black transition-all ease-linear duration-300 hover:text-sky-blue"
+                className="text-[22px] leading-[25px] font-normal text-black transition-all ease-linear duration-300 font-pinkyUnicorn"
               >
                 {obj.name}
               </a>
