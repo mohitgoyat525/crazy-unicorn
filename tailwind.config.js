@@ -6,6 +6,11 @@ module.exports = {
       fontFamily: {
         pinkyUnicorn: ["pinky-unicorn", "sans-serif"],
       },
+      screens: {
+        xlg: '1050px',
+        lg: '1025px',
+        md: '770px'
+      },
     },
   },
   plugins: [],
