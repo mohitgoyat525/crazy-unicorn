@@ -56,3 +56,14 @@ animation: moveCloudRight 10s linear infinite;
 .star-animation {
   animation: floatStar 4s ease-in-out infinite;
 }
+
+.border-linear-gradient {
+  background: linear-gradient(100.7deg, #B62AFF -82.68%, #FF0DF2 143.2%);
+}
+
+.linear-gradient {
+  background: linear-gradient(100.7deg, #B62AFF -82.68%, #FF0DF2 143.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

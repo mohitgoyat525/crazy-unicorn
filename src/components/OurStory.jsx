@@ -4,7 +4,7 @@ import CustomDescription from '../common/CustomDescription';
 
 const OurStory = () => {
     return (
-      <div className="bg-cover bg-center bg-no-repeat bg-ourStory-bg">
+      <div className="bg-cover bg-center bg-no-repeat bg-ourStory-bg pt-[157px]">
         <div className="max-w-[1361px] mx-auto px-4">
           <SubHeading text="Our Story" />
           <div className="pt-[22px]">
