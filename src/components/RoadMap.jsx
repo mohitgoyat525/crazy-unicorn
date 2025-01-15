@@ -12,12 +12,12 @@ const RoadMap = () => {
         <img
           src={RoadmapImg}
           alt="roadmap"
-          className="absolute left-[50%] top-[78%] max-lg:hidden max-xlg:top-[58%] translate-x-[-50%] translate-y-[-50%] max-md:hidden"
+          className="absolute left-[50%] pointer-events-none top-[78%] max-lg:hidden max-xlg:top-[58%] translate-x-[-50%] translate-y-[-50%] max-md:hidden"
         />
         <img
           src={RoadmapImg}
           alt="roadmap"
-          className="lg:hidden absolute left-0 w-full max-w-[400px] max-md:max-w-[300px] mx-auto"
+          className="lg:hidden pointer-events-none absolute left-0 w-full max-w-[400px] max-md:max-w-[300px] mx-auto"
         />
         <div className="flex flex-col gap-8 max-md:gap-6">
           {ROADMAP_LIST.map((phase, index) => (
