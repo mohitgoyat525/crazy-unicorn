@@ -4,8 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-body{
-    font-family: "Comic Neue", serif;
+body {
+  font-family: 'Comic Neue', serif;
+  background-size: cover;
+  background-image: url("/src/assets/images/png/body-bg-img.png");
 }
 
 @font-face {

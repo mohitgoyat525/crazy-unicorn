@@ -8,7 +8,7 @@ import HorseImg from '../assets/images/png/hero-uniconrn-img.png'
 
 const Hero = () => {
   return (
-    <div className="bg-cover bg-center bg-no-repeat bg-hero-bg relative overflow-hidden max-md:h-screen">
+    <div className="bg-cover bg-center bg-no-repeat bg-hero-bg relative overflow-hidden">
       <div className="max-w-[1361px] mx-auto px-4">
         <Header />
       </div>
