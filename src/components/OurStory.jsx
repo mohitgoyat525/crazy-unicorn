@@ -1,10 +1,15 @@
 import React from 'react'
 import SubHeading from '../common/SubHeading';
 import CustomDescription from '../common/CustomDescription';
-
+import RightStars from "../assets/images/png/our-story-star-left.png";
 const OurStory = () => {
     return (
-      <div className="bg-cover bg-center bg-no-repeat bg-ourStory-bg pt-[157px]">
+      <div className="bg-cover bg-center bg-no-repeat bg-ourStory-bg pt-[157px] relative max-2xl:pt-28 max-xlg:pt-24 max-lg:pt-20 max-md:pt-16 max-sm:pt-10 ">
+        <img
+          src={RightStars}
+          alt="stars"
+          className="w-full max-w-[200px] absolute left-0 top-0 star-animation max-sm:hidden"
+        />
         <div className="max-w-[1361px] mx-auto px-4">
           <SubHeading text="Our Story" />
           <div className="pt-[22px]">

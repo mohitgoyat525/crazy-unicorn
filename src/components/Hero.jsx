@@ -5,7 +5,7 @@ import StarLeftImg from '../assets/images/png/hero-stars-img-left.png'
 import StarRightImg from '../assets/images/png/hero-stars-img-right.png'
 import CloudImg from '../assets/images/png/cloud-img.png'
 import HorseImg from '../assets/images/png/hero-uniconrn-img.png'
-
+import UnicornImg from '../assets/images/png/crazy-unicorm-hero-sm-img.png'
 const Hero = () => {
   return (
     <div className="bg-cover bg-center bg-no-repeat bg-hero-bg relative overflow-hidden">
@@ -15,7 +15,7 @@ const Hero = () => {
       <img
         src={StarLeftImg}
         alt="starImg"
-        className="absolute left-0 w-[150px] sm:w-[200px] md:w-[265px] star-animation top-[100px] max-md:top-4 pointer-events-none"
+        className="absolute left-0 w-[150px] sm:w-[200px] md:w-[265px] star-animation top-[100px] max-md:top-[25%] pointer-events-none"
       />
       <img
         src={StarRightImg}
@@ -32,23 +32,29 @@ const Hero = () => {
           <img
             src={CloudImg}
             alt="cloud"
-            className="w-full absolute h-[150px] sm:h-[200px] md:h-[333px] top-[25%] md:top-[29%] cloud-animation-right pointer-events-none"
+            className="w-full absolute h-[150px] sm:h-[200px] md:h-[333px] top-[25%] md:top-[29%] cloud-animation-right pointer-events-none max-2xl:z-0"
           />
           <img
             src={HeroImg}
             alt="hero-img"
-            className="w-full sm:w-[90%] md:max-w-[1130px]  max-xlg:max-w-none relative pointer-events-none"
+            className="w-full  md:max-w-[1130px] max-2xl:hidden relative pointer-events-none"
           />
+          <img
+            src={UnicornImg}
+            alt="unicorn-img"
+            className="pointer-events-none max-w-[1130px] w-full 2xl:hidden z-[80] relative"
+          />
+
           <img
             src={HorseImg}
             alt="horse-img"
-            className="absolute w-full max-w-[600px] max-md:max-w-[400px] max-lg:max-w-[450px] pointer-events-none max-sm:h-[101px] max-customxl:h-[258px] max-xlg:h-[230px] max-lg:h-[200px] max-md:h-[170px] max-sm:max-w-[200px] z-30 h-[288px] bottom-[14%] max-md:bottom-[16%]
+            className="absolute w-full max-w-[600px] max-2xl:hidden pointer-events-none max-sm:h-[101px] h-[288px] z-30 bottom-[14%]
 "
           />
           <img
             src={CloudImg}
             alt="cloud"
-            className="w-full absolute h-[150px] sm:h-[200px] md:h-[333px] bottom-0 cloud-animation pointer-events-none"
+            className="w-full absolute h-[150px] sm:h-[200px] md:h-[333px] bottom-0 cloud-animation pointer-events-none max-2xl:z-0"
           />
         </div>
       </div>

@@ -7,6 +7,7 @@ import './App.css';
 import Team from './components/Team';
 import OurStory from './components/OurStory';
 import AboutUs from './components/AboutUs';
+import RoadMap from './components/RoadMap';
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
 
       <Hero />
       <OurStory />
-      <AboutUs/>
+      <AboutUs />
+      <RoadMap/>
     </>
   );
 }

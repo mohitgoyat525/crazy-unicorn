@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <nav className="flex items-center justify-between">
       <a href="/">
-        <img src={headerLogo} alt="logo" className="pt-[6px]" />
+        <img src={headerLogo} alt="logo" className="pt-[6px] relative z-40" />
       </a>
       <div
         className={`flex items-center gap-4 max-lg:flex-col max-lg:justify-center max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:h-screen max-lg:bg-white max-lg:z-[90] transition-transform duration-300 ${
