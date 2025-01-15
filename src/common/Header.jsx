@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import headerLogo from '../assets/images/svg/header-logo-icon.svg'
-import { NAVBAR_LIST } from '../utils/helper';
+import { NAVBAR_LIST, SOCIAL_LIST } from '../utils/helper';
 
 const Header = () => {
       const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ const Header = () => {
         <img src={headerLogo} alt="logo" className="pt-[6px]" />
       </a>
       <div
-        className={`flex items-center gap-4 max-lg:flex-col max-lg:justify-center max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:h-screen max-lg:bg-black max-lg:z-[90] transition-transform duration-300 ${
+        className={`flex items-center gap-4 max-lg:flex-col max-lg:justify-center max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:h-screen max-lg:bg-white max-lg:z-[90] transition-transform duration-300 ${
           isOpen ? "max-lg:-translate-y-0" : "max-lg:-translate-y-full"
         }`}
       >
@@ -40,16 +40,28 @@ const Header = () => {
               <a
                 href={obj.link}
                 onClick={handler}
-                className="text-[22px] leading-[25px] font-normal text-black transition-all ease-linear duration-300 font-pinkyUnicorn"
+                className="text-custom-2xl leading-[25px] font-normal text-black transition-all ease-linear duration-300 font-pinkyUnicorn"
               >
                 {obj.name}
               </a>
             </li>
           ))}
-          <li className='lg:hidden'>icon</li>
+          <li className="lg:hidden flex items-center gap-4">
+            {SOCIAL_LIST.map((item, index) => (
+              <a key={index} href={item.link} target="_blank">
+                {item.social}
+              </a>
+            ))}
+          </li>
         </ul>
       </div>
-      <div className="flex items-center gap-4 max-lg:hidden">icon</div>
+      <div className="flex items-center gap-4 max-lg:hidden">
+        {SOCIAL_LIST.map((item, index) => (
+          <a key={index} href={item.link} target="_blank">
+            {item.social}
+          </a>
+        ))}
+      </div>
       <button
         onClick={handler}
         className="flex flex-col justify-center items-center z-[100] gap-1 lg:hidden relative size-6"

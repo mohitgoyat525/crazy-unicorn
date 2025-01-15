@@ -12,3 +12,45 @@ body{
       font-family: "pinky-unicorn";
       src: url("/src/assets/fonts/Pinky Unicorn.ttf") format("truetype");
 }
+
+@keyframes moveCloud {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.cloud-animation {
+  animation: moveCloud 10s linear infinite;
+}
+
+@keyframes moveCloudRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.cloud-animation-right{
+animation: moveCloudRight 10s linear infinite;
+}
+
+@keyframes floatStar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.star-animation {
+  animation: floatStar 4s ease-in-out infinite;
+}
