@@ -3,6 +3,7 @@ import { FAQ_LIST } from '../utils/helper'
 import { FaqArrowIcon } from '../utils/icons'
 import SubHeading from '../common/SubHeading'
 import StarsFirst from '../assets/images/webp/faq-stars-first.webp'
+import StarsSecond from '../assets/images/webp/faq-stars-second.webp'
 
 const Faq = () => {
   const [active, setActive] = useState(0)
@@ -11,8 +12,18 @@ const Faq = () => {
   }
 
   return (
-    <div className='pb-[265px] max-lg:py-20 max-md:py-[60px] bg-faq-bg bg-center bg-cover relative'>
-      <img src={StarsFirst} alt='stars' className='absolute left-0 top-[-40%]' />
+    <div className='pb-[265px] pt-[107px] max-lg:py-20 max-md:py-[60px] bg-faq-bg bg-center bg-no-repeat bg-cover relative'>
+      <img
+        src={StarsFirst}
+        alt='stars'
+        className='absolute left-0 top-[-20%]'
+      />
+      <img
+        src={StarsSecond}
+        alt='stars'
+        className='absolute right-0 top-24'
+      />
+
       <div className='max-w-[1221px] mx-auto px-4'>
         <SubHeading text={'FAQs'} />
         <div className='flex flex-col gap-[35px] max-sm:gap-5 pt-[88px] max-lg:pt-12 max-md:pt-10'>

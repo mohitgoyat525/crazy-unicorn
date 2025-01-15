@@ -13,11 +13,11 @@ body {
   src: url('/src/assets/fonts/Pinky Unicorn.ttf') format('truetype');
 }
 
-.pink-border {
+/* .pink-border {
   border: 1px solid !;
   border-image-source: linear-gradient(
     100.7deg,
     rgba(182, 42, 255, 0.5) -82.68%,
     rgba(255, 13, 242, 0.5) 143.2%
   );
-}
+} */

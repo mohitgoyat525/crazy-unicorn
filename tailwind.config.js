@@ -14,6 +14,7 @@ module.exports = {
       backgroundImage: {
         "faq-bg": "url('./assets/images/webp/faq-bg.webp')",
         "team-bg": "url('./assets/images/webp/team-section-bg.webp')",
+        "footer-bg": "url('./assets/images/webp/footer-bg.webp')",
       },
     },
   },

@@ -4,7 +4,7 @@ import { TEAM_DATA_LIST } from '../utils/helper'
 
 const Team = () => {
   return (
-    <div className='bg-team-bg bg-cover bg-center pt-[83px] pb-[147px]'>
+    <div className='bg-team-bg bg-cover bg-center pt-[83px] pb-[100px]'>
       <div className='max-w-[1353px] mx-auto px-4'>
         <SubHeading text={'Team'} />
         <div className='flex items-center justify-center gap-6 max-xl:flex-wrap pt-[190px] max-lg:pt-20'>
@@ -15,7 +15,7 @@ const Team = () => {
             >
               <div className='rounded-[25px]'>
                 <img
-                  className='pointer-events-none max-w-[312px] mx-auto -mt-9 group-hover:max-w-[381px] group-hover:-mt-[74px] transition-all ease-in-out duration-300'
+                  className='pointer-events-none max-w-[312px] mx-auto -mt-9 transition-all ease-in-out duration-300'
                   src={obj.image}
                   alt='team-image'
                 />
