@@ -1,4 +1,23 @@
-import { InstagramIcon, TwitterIcon } from "./icons";
+import { DiscordIcon, InstagramIcon, TwitterIcon } from "./icons";
+import TeamHorse from '../assets/images/webp/jerome-bell.webp'
+
+export const TEAM_DATA_LIST = [
+    {
+        image: TeamHorse,
+        title: 'Jerome Bell',
+        description: '(CEO)'
+    },
+    {
+        image: TeamHorse,
+        title: 'Jenny Wilson',
+        description: '(Founder)'
+    },
+    {
+        image: TeamHorse,
+        title: 'Ralph Edwards',
+        description: '(Team Member)'
+    }
+]
 
 export const FAQ_LIST = [
     {

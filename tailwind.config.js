@@ -11,6 +11,10 @@ module.exports = {
         lg: '1025px',
         md: '770px'
       },
+      backgroundImage: {
+        "faq-bg": "url('./assets/images/webp/faq-bg.webp')",
+        "team-bg": "url('./assets/images/webp/team-section-bg.webp')",
+      },
     },
   },
   plugins: [],

@@ -56,8 +56,8 @@ export const MailIcon = () => (
     </svg>
 )
 
-export const FaqArrowIcon = () => (
-    <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const FaqArrowIcon = ({ myClass }) => (
+    <svg className={`${myClass}`} width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M20.5714 13.7143L12 5.14286L3.42857 13.7143L0 12L12 0L24 12L20.5714 13.7143Z" fill="black" />
     </svg>
 )
