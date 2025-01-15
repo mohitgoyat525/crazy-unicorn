@@ -1,5 +1,30 @@
-import { DiscordIcon, InstagramIcon, TwitterIcon } from "./icons";
+
+import { DiscordIcon, InstagramIcon, TwitterIcon } from "../utils/icons";
 import TeamHorse from '../assets/images/webp/jerome-bell.webp'
+
+export const NAVBAR_LIST = [
+  { name: "Home", link: "#home" },
+  { name: "Story", link: "#story" },
+  { name: "About", link: "#about" },
+  { name: "Roadmap", link: "#roadmap" },
+  { name: "Team", link: "#team" },
+  { name: "FAQs", link: "#faqs" },
+];
+
+export const SOCIAL_LIST = [
+  {
+    social: <TwitterIcon />,
+    link: "https://x.com/i/flow/login",
+  },
+  {
+    social: <InstagramIcon />,
+    link: "https://www.instagram.com/",
+  },
+  {
+    social: <DiscordIcon />,
+    link: "https://discord.com/",
+  },
+];
 
 export const TEAM_DATA_LIST = [
     {

@@ -1,8 +1,14 @@
-/** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontSize: {
+        "custom-2xl": "22px",
+        "custom-7xl": "70px",
+        "custom-xl": "18px",
+        "custom-4xl": "40px",
+      },
       fontFamily: {
         pinkyUnicorn: ["pinky-unicorn", "sans-serif"],
       },
@@ -10,11 +16,6 @@ module.exports = {
         xlg: '1050px',
         lg: '1025px',
         md: '770px'
-      },
-      backgroundImage: {
-        "faq-bg": "url('./assets/images/webp/faq-bg.webp')",
-        "team-bg": "url('./assets/images/webp/team-section-bg.webp')",
-        "footer-bg": "url('./assets/images/webp/footer-bg.webp')",
       },
     },
   },

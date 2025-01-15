@@ -6,6 +6,8 @@
 
 body {
   font-family: 'Comic Neue', serif;
+  background-size: cover;
+  background-image: url('/src/assets/images/png/body-bg-img.png');
 }
 
 @font-face {
@@ -13,11 +15,54 @@ body {
   src: url('/src/assets/fonts/Pinky Unicorn.ttf') format('truetype');
 }
 
-/* .pink-border {
-  border: 1px solid !;
+@keyframes moveCloud {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.cloud-animation {
+  animation: moveCloud 10s linear infinite;
+}
+
+@keyframes moveCloudRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.cloud-animation-right {
+  animation: moveCloudRight 10s linear infinite;
+}
+
+@keyframes floatStar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.star-animation {
+  animation: floatStar 4s ease-in-out infinite;
+}
+
+.custom-border {
+  border: 1px solid;
+
   border-image-source: linear-gradient(
     100.7deg,
     rgba(182, 42, 255, 0.5) -82.68%,
     rgba(255, 13, 242, 0.5) 143.2%
   );
-} */
+}

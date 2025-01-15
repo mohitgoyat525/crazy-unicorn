@@ -12,16 +12,16 @@ const Faq = () => {
   }
 
   return (
-    <div className='pb-[265px] pt-[107px] max-lg:py-20 max-md:py-[60px] bg-faq-bg bg-center bg-no-repeat bg-cover relative'>
+    <div className='pb-[265px] pt-[107px] max-lg:py-20 max-md:py-[60px] relative'>
       <img
         src={StarsFirst}
         alt='stars'
-        className='absolute left-0 top-[-20%]'
+        className='absolute left-0 top-[-20%] max-lg:hidden'
       />
       <img
         src={StarsSecond}
         alt='stars'
-        className='absolute right-0 top-24'
+        className='absolute right-0 top-24 max-lg:hidden'
       />
 
       <div className='max-w-[1221px] mx-auto px-4'>
@@ -47,7 +47,7 @@ const Faq = () => {
               <p
                 className={`max-w-[769px] font-normal text-[22px] max-md:text-base max-lg:text-xl max-sm:text-sm leading-[38.28px] transition-all duration-300 overflow-hidden text-black ${
                   active === i
-                    ? 'max-h-32 border-b border-black pb-[22px] max-lg:pb-5 max-md:pb-3'
+                    ? 'max-h-32 border-b border-black border-opacity-30 pb-[22px] max-lg:pb-5 max-md:pb-3'
                     : 'max-h-0'
                 }`}
               >
