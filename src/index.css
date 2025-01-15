@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+      font-family: "pinky-unicorn";
+      src: url("/src/assets/fonts/Pinky Unicorn.ttf") format("truetype");
+}
