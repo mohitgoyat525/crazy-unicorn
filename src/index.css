@@ -4,11 +4,66 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-body{
-    font-family: "Comic Neue", serif;
+body {
+  font-family: 'Comic Neue', serif;
+  background-size: cover;
+  background-image: url("/src/assets/images/png/body-bg-img.png");
 }
 
 @font-face {
       font-family: "pinky-unicorn";
       src: url("/src/assets/fonts/Pinky Unicorn.ttf") format("truetype");
+}
+
+@keyframes moveCloud {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.cloud-animation {
+  animation: moveCloud 10s linear infinite;
+}
+
+@keyframes moveCloudRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.cloud-animation-right{
+animation: moveCloudRight 10s linear infinite;
+}
+
+@keyframes floatStar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.star-animation {
+  animation: floatStar 4s ease-in-out infinite;
+}
+
+.border-linear-gradient {
+  background: linear-gradient(100.7deg, #B62AFF -82.68%, #FF0DF2 143.2%);
+}
+
+.linear-gradient {
+  background: linear-gradient(100.7deg, #B62AFF -82.68%, #FF0DF2 143.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
