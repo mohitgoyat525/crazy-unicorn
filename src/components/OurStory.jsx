@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SubHeading from "../common/SubHeading";
 import CustomDescription from "../common/CustomDescription";
 import RightStars from "../assets/images/png/our-story-star-left.png";
+import AOS from "aos";
+
 const OurStory = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in-out",
+      once: false,
+      offset: 100,
+    });
+  }, []);
   return (
-    <div id="story" className="pt-[157px] relative max-2xl:pt-28 max-xlg:pt-24 max-lg:pt-20 max-md:py-16 max-sm:py-10 ">
+    <div
+      data-aos="zoom-in"
+      id="story"
+      className="pt-[157px] relative max-2xl:pt-28 max-xlg:pt-24 max-lg:pt-20 max-md:py-16 max-sm:py-10 "
+    >
       <img
         src={RightStars}
         alt="stars"

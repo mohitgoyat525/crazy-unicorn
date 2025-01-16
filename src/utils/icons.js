@@ -115,8 +115,20 @@ export const MailIcon = () => (
 )
 
 export const FaqArrowIcon = ({ myClass }) => (
-  <svg className={`${myClass}`} width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20.5714 13.7143L12 5.14286L3.42857 13.7143L0 12L12 0L24 12L20.5714 13.7143Z" fill="black" />
-  </svg>
+  < svg className={`${myClass}`} width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" >
+    <path d="M3.42857 0.285716L12 8.85714L20.5714 0.285714L24 2L12 14L-1.04907e-06 2L3.42857 0.285716Z" fill="black" />
+  </svg >
 )
 
+export const BackToTopIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="30"
+    height="30"
+    fill="#32C7F1"
+    class="bi bi-arrow-up-square-fill"
+    viewBox="0 0 16 16"
+  >
+    <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0" />
+  </svg>
+);

@@ -6,7 +6,9 @@ import OurStory from './components/OurStory';
 import AboutUs from './components/AboutUs';
 import RoadMap from './components/RoadMap';
 import Hero from './components/Hero';
-
+import BackToTop from './common/BackToTop';
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
   return (
     <>
@@ -16,7 +18,8 @@ function App() {
       <RoadMap />
       <Team />
       <Faq />
-      <Footer/>
+      <Footer />
+      <BackToTop/>
     </>
   );
 }

@@ -79,7 +79,7 @@ const Footer = () => {
           <form
             onSubmit={handleSubmit}
             action="#"
-            className="bg-white py-2 pl-[19px] pr-[9px] rounded-[10px] w-full flex items-center"
+            className="bg-white py-[9.5px] pl-[19px] pr-[9px] rounded-[10px] w-full flex items-center"
           >
             <MailIcon />
             <input

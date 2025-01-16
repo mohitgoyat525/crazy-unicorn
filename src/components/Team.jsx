@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SubHeading from '../common/SubHeading'
 import StarsImage from '../assets/images/webp/team-stars.webp'
 import { TEAM_LIST } from '../utils/helper'
+import AOS from "aos";
 
 const Team = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in-out",
+      once: false,
+      offset: 100,
+    });
+  }, []);
+
   return (
     <div
       id="team"
-      className="pt-[120px] pb-[100px] max-lg:py-[60px] max-sm:py-10 relative"
+      className="pt-[120px] pb-[100px] max-lg:py-[60px] max-sm:py-10 relative overflow-hidden"
     >
       <img
         src={StarsImage}
@@ -19,6 +30,7 @@ const Team = () => {
         <div className="flex gap-[23.64px] max-sm:gap-8 max-lg:flex-wrap max-xl:justify-center max-xl:px-5 pt-[190px] max-xlg:pt-[90px] max-md:pt-[60px] max-sm:pt-10">
           {TEAM_LIST.map((obj, i) => (
             <div
+              data-aos="flip-right"
               key={i}
               className="max-w-[424px] max-lg:max-w-[360px] max-sm:w-[240px] cursor-pointer p-[1px] bg-team-card w-full rounded-[25px] group origin-bottom transition-all duration-300"
             >

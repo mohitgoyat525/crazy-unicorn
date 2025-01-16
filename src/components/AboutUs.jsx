@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AboutUsImg from '../assets/images/webp/about-us-unicorn-img.webp'
 import SubHeading from '../common/SubHeading';
 import CustomDescription from '../common/CustomDescription';
 import CustomButton from '../common/CustomButton';
 import AboutStarImg from '../assets/images/png/about-us-right-img.png'
 import AboutStarLeftImg from '../assets/images/png/about-star-left-img.png'
+import AOS from "aos";
+import "aos/dist/aos.css";
 const AboutUs = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in-out",
+      once: false,
+      offset: 100,
+    });
+  }, []);
 
   return (
-    <div id='about' className="relative">
+    <div id="about" className="relative overflow-hidden">
       <img
         src={AboutStarImg}
         alt="stars"
@@ -21,14 +31,17 @@ const AboutUs = () => {
       />
       <div className="max-w-[1352px] mx-auto px-4 pt-[196px] max-2xl:pt-36 max-xlg:pt-[60px] max-md:py-0">
         <div className="flex item-center gap-[83px] max-xl:gap-16 max-xlg:gap-12 max-md:gap-16 max-lg:flex-wrap max-lg:justify-center">
-          <div className="w-6/12 max-lg:w-full">
+          <div className="w-6/12 max-lg:w-full" data-aos="fade-right">
             <img
               src={AboutUsImg}
               alt="unicorns"
               className="w-full max-w-[661px] max-lg:mx-auto pointer-events-none"
             />
           </div>
-          <div className="w-6/12 max-lg:w-full pt-[121px] max-2xl:pt-24 max-customxl:pt-20 max-xlg:pt-0 max-lg:relative max-lg:z-20">
+          <div
+            className="w-6/12 max-lg:w-full pt-[121px] max-2xl:pt-24 max-customxl:pt-20 max-xlg:pt-0 max-lg:relative max-lg:z-20"
+            data-aos="fade-left"
+          >
             <SubHeading text="ABOUT US" myclass="!m-0 pb-6 max-xlg:!mx-auto" />
             <CustomDescription
               myClass="text-start max-xlg:text-center"
