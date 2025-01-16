@@ -8,7 +8,7 @@ import AboutStarImg from '../assets/images/png/about-us-right-img.png'
 import AboutStarLeftImg from '../assets/images/png/about-star-left-img.png'
 const AboutUs = () => {
   return (
-    <div className="relative">
+    <div id='about' className="relative">
       <img
         src={AboutStarImg}
         alt="stars"
@@ -19,7 +19,7 @@ const AboutUs = () => {
         alt="stars"
         className="max-sm:hidden absolute left-0 w-full max-w-[200px] bottom-0 star-animation"
       />
-      <div className="max-w-[1352px] mx-auto px-4 pt-[221px] max-2xl:py-36 max-xlg:py-28 max-md:py-20 max-sm:py-10">
+      <div className="max-w-[1352px] mx-auto px-4 pt-[196px] max-2xl:py-36 max-xlg:py-[60px] max-md:py-0">
         <div className="flex item-center gap-[83px] max-xl:gap-16 max-xlg:gap-12 max-md:gap-16 max-lg:flex-wrap max-lg:justify-center">
           <div className="w-6/12 max-lg:w-full">
             <img

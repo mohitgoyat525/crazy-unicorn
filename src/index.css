@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+*{
+  scroll-behavior: smooth !important;
+}
+
 body {
   font-family: 'Comic Neue', serif;
   background-size: cover;
@@ -38,7 +42,7 @@ body {
 }
 
 .cloud-animation-right {
-  animation: moveCloudRight 10s linear infinite;
+  animation: moveCloudRight 20s linear infinite;
 }
 
 .cloud-animation-right {
@@ -59,25 +63,4 @@ body {
 
 .star-animation {
   animation: floatStar 4s ease-in-out infinite;
-}
-
-.custom-border {
-  border: 1px solid;
-
-  border-image-source: linear-gradient(
-    100.7deg,
-    rgba(182, 42, 255, 0.5) -82.68%,
-    rgba(255, 13, 242, 0.5) 143.2%
-  );
-}
-
-.border-linear-gradient {
-  background: linear-gradient(100.7deg, #b62aff -82.68%, #ff0df2 143.2%);
-}
-
-.linear-gradient {
-  background: linear-gradient(100.7deg, #b62aff -82.68%, #ff0df2 143.2%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }

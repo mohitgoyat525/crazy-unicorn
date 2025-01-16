@@ -8,14 +8,14 @@ import HorseImg from "../assets/images/png/hero-uniconrn-img.png";
 import UnicornImg from "../assets/images/png/crazy-unicorm-hero-sm-img.png";
 const Hero = () => {
   return (
-    <div className="bg-cover bg-center bg-no-repeat bg-hero-bg relative overflow-hidden">
+    <div id="home" className="bg-cover bg-center bg-no-repeat bg-hero-bg relative overflow-hidden">
       <div className="max-w-[1361px] mx-auto px-4">
         <Header />
       </div>
       <img
         src={StarLeftImg}
         alt="starImg"
-        className="absolute left-0 w-[150px] sm:w-[200px] md:w-[265px] star-animation top-[100px] max-md:top-[25%] pointer-events-none"
+        className="absolute left-0 w-[100px] sm:w-[200px] md:w-[265px] star-animation top-[100px] max-md:top-[40%] pointer-events-none"
       />
       <img
         src={StarRightImg}

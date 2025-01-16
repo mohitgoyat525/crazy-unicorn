@@ -34,7 +34,7 @@ module.exports = {
         xl: "1140px",
         customxl: "1375px",
         xlg: "1050px",
-        lg: "1024px",
+        lg: "1025px",
         md: "770px",
         sm: "600px",
       },

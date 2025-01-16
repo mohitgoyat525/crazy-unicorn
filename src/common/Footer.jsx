@@ -35,7 +35,7 @@ const Footer = () => {
       })
   }
   return (
-    <footer className='max-w-[1920px] mx-auto flex items-center flex-col justify-center max-lg:pt-[60px] relative overflow-hidden'>
+    <footer className='flex items-center flex-col justify-center max-lg:pt-[60px] max-sm:pt-0 relative overflow-hidden'>
       <img
         src={StarFirst}
         alt='stars'
@@ -71,7 +71,7 @@ const Footer = () => {
         <h2 className='font-pinkyUnicorn text-custom-7xl leading-[105px] text-center max-md:text-4xl max-sm:text-3xl max-sm:leading-8 max-md:leading-10'>
           Sign up for the latest news
         </h2>
-        <p className='text-custom-2xl leading-[38px] text-center pb-[33px] max-lg:pb-5 max-w-[659px] mx-auto max-lg:text-base max-sm:pt-1'>
+        <p className='text-custom-2xl leading-[38px] text-center max-md:text-lg pb-[33px] max-lg:pb-5 max-sm:pb-3 max-w-[659px] mx-auto max-sm:pt-1'>
           Convallis et vel cras odio mi, volutpat sed ultrices. Sed amet sed
           aenean egestas ut sit.
         </p>
@@ -118,7 +118,7 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <p className='text-center text-xl max-md:text-base leading-[23px] opacity-70 py-[63px] max-lg:py-10 max-md:py-5'>
+        <p className='text-center text-xl max-md:text-base leading-[23px] opacity-70 py-[63px] max-lg:py-10 max-md:py-5 max-sm:py-4'>
           Copyright@CrazyUnicorn.com
         </p>
       </div>

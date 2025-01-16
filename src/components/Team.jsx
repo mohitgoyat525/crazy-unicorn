@@ -5,7 +5,7 @@ import { TEAM_LIST } from '../utils/helper'
 
 const Team = () => {
   return (
-    <div className='pt-[120px] pb-[100px] max-lg:py-[60px] relative'>
+    <div id='team' className='pt-[120px] pb-[100px] max-lg:py-[60px] max-sm:pt-[15px] relative'>
       <img
         src={StarsImage}
         alt='star-image'
@@ -13,7 +13,7 @@ const Team = () => {
       />
       <div className='max-w-[1353px] mx-auto px-4'>
         <SubHeading text={'Team'} />
-        <div className='flex gap-[23.64px] max-sm:gap-8 max-lg:flex-wrap max-xl:justify-center max-xl:px-5 pt-[190px] max-lg:pt-[125px] max-md:pt-[60px] max-sm:pt-10'>
+        <div className='flex gap-[23.64px] max-sm:gap-8 max-lg:flex-wrap max-xl:justify-center max-xl:px-5 pt-[190px] max-xlg:pt-[125px] max-md:pt-[60px] max-sm:pt-10'>
           {TEAM_LIST.map((obj, i) => (
             <div
               key={i}
