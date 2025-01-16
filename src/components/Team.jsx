@@ -16,7 +16,7 @@ const Team = () => {
       />
       <div className="max-w-[1353px] mx-auto px-4">
         <SubHeading text={"Team"} />
-        <div className="flex gap-[23.64px] max-sm:gap-8 max-lg:flex-wrap max-xl:justify-center max-xl:px-5 pt-[190px] max-xlg:pt-[120px] max-md:pt-[60px] max-sm:pt-10">
+        <div className="flex gap-[23.64px] max-sm:gap-8 max-lg:flex-wrap max-xl:justify-center max-xl:px-5 pt-[190px] max-xlg:pt-[90px] max-md:pt-[60px] max-sm:pt-10">
           {TEAM_LIST.map((obj, i) => (
             <div
               key={i}

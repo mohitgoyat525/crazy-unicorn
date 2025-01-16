@@ -4,7 +4,7 @@ import CustomDescription from "../common/CustomDescription";
 import RightStars from "../assets/images/png/our-story-star-left.png";
 const OurStory = () => {
   return (
-    <div id="story" className="pt-[157px] relative max-2xl:pt-28 max-xlg:pt-24 max-lg:pt-20 max-md:pt-16 max-sm:pt-10 ">
+    <div id="story" className="pt-[157px] relative max-2xl:pt-28 max-xlg:pt-24 max-lg:pt-20 max-md:py-16 max-sm:py-10 ">
       <img
         src={RightStars}
         alt="stars"
