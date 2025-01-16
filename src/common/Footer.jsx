@@ -100,7 +100,7 @@ const Footer = () => {
             />
           </form>
         </div>
-        <a href='#footerlogo'>
+        <a href='/'>
           <img
             src={FooterLogo}
             alt='footer-logo'

@@ -12,7 +12,7 @@ const Faq = () => {
   }
 
   return (
-    <div id='faqs' className='pb-[265px] pt-[107px] max-xlg:py-[60px]  relative'>
+    <div id='faqs' className='pb-[265px] pt-[107px] max-lg:py-[60px] max-sm:py-10 relative'>
       <img
         src={StarsFirst}
         alt='stars'

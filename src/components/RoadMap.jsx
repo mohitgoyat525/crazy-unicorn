@@ -57,7 +57,7 @@ const RoadMap = () => {
                   }`}
                 >
                   <h3
-                    className={`text-custom-4xl max-md:text-2xl max-sm:text-xl max-md:pb-2 font-normal font-pinkyUnicorn pb-[10px] text-black max-lg:text-3xl ${
+                    className={`text-custom-4xl max-md:text-center max-md:text-2xl max-sm:text-xl max-md:pb-2 font-normal font-pinkyUnicorn pb-[10px] text-black max-lg:text-3xl ${
                       i === 1 || i === 3 ? "max-xl:text-end" : ""
                     }`}
                   >
