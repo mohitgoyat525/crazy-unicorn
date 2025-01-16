@@ -17,13 +17,13 @@ const RoadMap = () => {
         <img
           src={RoadmapImg}
           alt="roadmap"
-          className="lg:hidden pointer-events-none absolute left-0 w-full max-w-[400px] max-md:max-w-[300px] mx-auto"
+          className="lg:hidden pointer-events-none absolute left-0 w-full max-w-[590px] max-md:max-w-[300px] mx-auto"
         />
         <div className="flex flex-col gap-8 max-md:gap-6">
           {ROADMAP_LIST.map((phase, index) => (
             <div
               key={index}
-              className={`w-full max-w-[451px] max-2xl:max-w-[390px] max-lg:my-5 max-lg:ml-auto max-2xl:relative max-2xl:z-20 bg-transparent max-md:max-w-full ${
+              className={`w-full max-w-[451px] max-2xl:max-w-[390px] max-lg:my-5 max-md:my-3 max-lg:ml-auto max-2xl:relative max-2xl:z-20 bg-transparent max-md:max-w-full ${
                 index % 2 !== 0 ? "ml-auto" : ""
               }`}
             >
