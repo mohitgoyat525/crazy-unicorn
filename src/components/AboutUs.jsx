@@ -14,8 +14,8 @@ const AboutUs = () => {
         className="absolute right-0 w-full max-w-[200px] top-0 star-animation max-sm:hidden"
       />
       <img src={AboutStarLeftImg} alt="stars"  className='max-sm:hidden absolute left-0 w-full max-w-[200px] bottom-0 star-animation'/>
-      <div className="max-w-[1352px] mx-auto px-4 pt-[221px] max-2xl:py-36 max-xlg:py-28 max-md:py-20 max-sm:py-10">
-        <div className="flex item-center gap-[83px] max-customxl:gap-16 max-xlg:gap-12 max-md:gap-8 max-lg:flex-wrap max-lg:justify-center">
+      <div className="max-w-[1352px] mx-auto px-4 py-[221px] max-2xl:py-36 max-xlg:py-28 max-md:py-20 max-sm:py-10">
+        <div className="flex item-center gap-[83px] max-customxl:gap-16 max-xlg:gap-12 max-md:gap-16 max-lg:flex-wrap max-lg:justify-center">
           <div className="w-6/12 max-lg:w-full">
             <img
               src={AboutUsImg}
