@@ -1,45 +1,6 @@
 
 import { DiscordIcon, InstagramIcon, TwitterIcon } from "./icons";
-
-// export const FAQ_LIST = [
-//   {
-//     title: "Q.1 Eu faucibus lorem nulla cras ?",
-//     description:
-//       "Pulvinar odio scelerisque suspendisse fringilla rutrum a. Vestibulum etiam egestas dictum tristique. Eu quis in eu nunc, aliquet in non elit. Dis tincidunt.",
-//   },
-//   {
-//     title: "Q.2 Eu adipiscing ac felis mauris ?",
-//     description:
-//       "Pulvinar odio scelerisque suspendisse fringilla rutrum a. Vestibulum etiam egestas dictum tristique. Eu quis in eu nunc, aliquet in non elit. Dis tincidunt.",
-//   },
-//   {
-//     title: "Q.3 Ridiculus amet gravida accumsan dis ?",
-//     description:
-//       "Pulvinar odio scelerisque suspendisse fringilla rutrum a. Vestibulum etiam egestas dictum tristique. Eu quis in eu nunc, aliquet in non elit. Dis tincidunt.",
-//   },
-//   {
-//     title: "Q.4 Magna eu diam nec quis turpis tortor pulvinar ?",
-//     description:
-//       "Pulvinar odio scelerisque suspendisse fringilla rutrum a. Vestibulum etiam egestas dictum tristique. Eu quis in eu nunc, aliquet in non elit. Dis tincidunt.",
-//   },
-//   {
-//     title: "Q.5 Morbi at cursus ut in augue ?",
-//     description:
-//       "Pulvinar odio scelerisque suspendisse fringilla rutrum a. Vestibulum etiam egestas dictum tristique. Eu quis in eu nunc, aliquet in non elit. Dis tincidunt.",
-//   },
-//   {
-//     title: "Q.6 Cras pellentesque convallis semper dolor at vel ?",
-//     description:
-//       "Pulvinar odio scelerisque suspendisse fringilla rutrum a. Vestibulum etiam egestas dictum tristique. Eu quis in eu nunc, aliquet in non elit. Dis tincidunt.",
-//   },
-//   {
-//     title: "Q.7 gravida maecenas amet tincidunt feugiat ?",
-//     description:
-//       "Pulvinar odio scelerisque suspendisse fringilla rutrum a. Vestibulum etiam egestas dictum tristique. Eu quis in eu nunc, aliquet in non elit. Dis tincidunt.",
-//   },
-// ];
-
-
+import HorseImage from '../assets/images/webp/jerome-bell.webp'
 
 export const NAVBAR_LIST = [
   { name: "Home", link: "#home" },
@@ -65,19 +26,19 @@ export const SOCIAL_LIST = [
   },
 ];
 
-export const TEAM_DATA_LIST = [
+export const TEAM_LIST = [
     {
-        image: "TeamHorse",
+        image: HorseImage,
         title: 'Jerome Bell',
         description: '(CEO)'
     },
     {
-        image: "TeamHorse",
+        image: HorseImage,
         title: 'Jenny Wilson',
         description: '(Founder)'
     },
     {
-        image: "TeamHorse",
+        image: HorseImage,
         title: 'Ralph Edwards',
         description: '(Team Member)'
     }

@@ -9,14 +9,14 @@ import LeftStars from "../assets/images/svg/roadmap-right-stars.svg";
 
 const RoadMap = () => {
   return (
-    <div className="pt-[231px] pb-20 px-5 overflow-hidden max-2xl:pt-48 max-xl:pt-40 max-lg:pt-32 max-md:pt-28 max-sm:pt-20 relative">
+    <div className="max-w-[1920px] mx-auto pt-[231px] pb-[240px] px-5 overflow-hidden max-2xl:pt-48 max-xl:pt-40 max-lg:pt-32 max-md:pt-28 max-sm:pt-20 relative">
       <img
-        className="absolute right-0 -top-10 max-2xl:max-w-96 max-xl:max-w-72 max-md:max-w-[198px] max-md:top-1/4 -z-[1] star-animation"
+        className="absolute left-0 -top-10 max-2xl:max-w-96 max-xl:max-w-72 max-md:max-w-[198px] max-md:top-1/4 -z-[1] star-animation"
         src={RightStars}
         alt="start"
       />
       <img
-        className="absolute left-0 bottom-0 max-2xl:max-w-60 max-xl:max-w-48 max-md:max-w-[198px] max-md:-bottom-10 -z-[1] star-animation"
+        className="absolute right-0 bottom-0 max-2xl:max-w-60 max-xl:max-w-48 max-md:max-w-[198px] max-md:-bottom-10 -z-[1] star-animation"
         src={LeftStars}
         alt="start"
       />

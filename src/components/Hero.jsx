@@ -1,11 +1,11 @@
-import React from 'react'
-import Header from '../common/Header'
-import HeroImg from '../assets/images/png/crazy-unicorm-hero-img.png'
-import StarLeftImg from '../assets/images/png/hero-stars-img-left.png'
-import StarRightImg from '../assets/images/png/hero-stars-img-right.png'
-import CloudImg from '../assets/images/png/cloud-img.png'
-import HorseImg from '../assets/images/png/hero-uniconrn-img.png'
-import UnicornImg from '../assets/images/png/crazy-unicorm-hero-sm-img.png'
+import React from "react";
+import Header from "../common/Header";
+import HeroImg from "../assets/images/png/crazy-unicorm-hero-img.png";
+import StarLeftImg from "../assets/images/png/hero-stars-img-left.png";
+import StarRightImg from "../assets/images/png/hero-stars-img-right.png";
+import CloudImg from "../assets/images/webp/footer-cloud.webp";
+import HorseImg from "../assets/images/png/hero-uniconrn-img.png";
+import UnicornImg from "../assets/images/png/crazy-unicorm-hero-sm-img.png";
 const Hero = () => {
   return (
     <div className="bg-cover bg-center bg-no-repeat bg-hero-bg relative overflow-hidden">
@@ -60,6 +60,6 @@ const Hero = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;

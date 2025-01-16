@@ -1,18 +1,23 @@
+import './App.css';
 
-import './App.css';
-import Hero from './components/Hero';
-import './App.css';
+import Faq from '../src/components/Faq';
+import Footer from './common/Footer';
+import Team from './components/Team';
 import OurStory from './components/OurStory';
 import AboutUs from './components/AboutUs';
 import RoadMap from './components/RoadMap';
+import Hero from './components/Hero';
 
 function App() {
   return (
     <>
-      <Hero />
+      <Hero/>
       <OurStory />
       <AboutUs />
-      <RoadMap/>
+      <RoadMap />
+      <Team />
+      <Faq />
+      <Footer/>
     </>
   );
 }

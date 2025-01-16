@@ -7,12 +7,12 @@
 body {
   font-family: 'Comic Neue', serif;
   background-size: cover;
-  background-image: url("/src/assets/images/png/body-bg-img.png");
+  background-image: url('/src/assets/images/png/body-bg-img.png');
 }
 
 @font-face {
-      font-family: "pinky-unicorn";
-      src: url("/src/assets/fonts/Pinky Unicorn.ttf") format("truetype");
+  font-family: 'pinky-unicorn';
+  src: url('/src/assets/fonts/Pinky Unicorn.ttf') format('truetype');
 }
 
 @keyframes moveCloud {
@@ -37,8 +37,12 @@ body {
   }
 }
 
-.cloud-animation-right{
-animation: moveCloudRight 20s linear infinite;
+.cloud-animation-right {
+  animation: moveCloudRight 10s linear infinite;
+}
+
+.cloud-animation-right {
+  animation: moveCloudRight 20s linear infinite;
 }
 
 @keyframes floatStar {
@@ -57,12 +61,22 @@ animation: moveCloudRight 20s linear infinite;
   animation: floatStar 4s ease-in-out infinite;
 }
 
+.custom-border {
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    100.7deg,
+    rgba(182, 42, 255, 0.5) -82.68%,
+    rgba(255, 13, 242, 0.5) 143.2%
+  );
+}
+
 .border-linear-gradient {
-  background: linear-gradient(100.7deg, #B62AFF -82.68%, #FF0DF2 143.2%);
+  background: linear-gradient(100.7deg, #b62aff -82.68%, #ff0df2 143.2%);
 }
 
 .linear-gradient {
-  background: linear-gradient(100.7deg, #B62AFF -82.68%, #FF0DF2 143.2%);
+  background: linear-gradient(100.7deg, #b62aff -82.68%, #ff0df2 143.2%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
