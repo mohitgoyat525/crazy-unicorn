@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import headerLogo from '../assets/images/svg/header-logo-icon.svg'
-import { NAVBAR_LIST, SOCIAL_LIST } from '../utils/helper';
+import { NAVBAR_LIST, SOCIAL_LINKS, SOCIAL_LIST } from '../utils/helper';
 
 const Header = () => {
       const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +47,7 @@ const Header = () => {
             </li>
           ))}
           <li className="lg:hidden flex items-center gap-4">
-            {SOCIAL_LIST.map((item, index) => (
+            {SOCIAL_LINKS.map((item, index) => (
               <a
                 key={index}
                 href={item.link}
@@ -61,7 +61,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="flex items-center gap-4 max-lg:hidden">
-        {SOCIAL_LIST.map((item, index) => (
+        {SOCIAL_LINKS.map((item, index) => (
           <a
             key={index}
             href={item.link}

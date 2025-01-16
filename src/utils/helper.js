@@ -11,21 +11,6 @@ export const NAVBAR_LIST = [
   { name: "FAQs", link: "#faqs" },
 ];
 
-export const SOCIAL_LIST = [
-  {
-    social: <TwitterIcon />,
-    link: "https://x.com/i/flow/login",
-  },
-  {
-    social: <InstagramIcon />,
-    link: "https://www.instagram.com/",
-  },
-  {
-    social: <DiscordIcon />,
-    link: "https://discord.com/",
-  },
-];
-
 export const TEAM_LIST = [
     {
         image: HorseImage,

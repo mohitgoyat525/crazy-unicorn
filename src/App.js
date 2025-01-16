@@ -1,5 +1,4 @@
 import './App.css';
-
 import Faq from '../src/components/Faq';
 import Footer from './common/Footer';
 import Team from './components/Team';

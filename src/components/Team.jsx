@@ -20,7 +20,7 @@ const Team = () => {
           {TEAM_LIST.map((obj, i) => (
             <div
               key={i}
-              className="max-w-[424px] max-lg:max-w-[360px] max-sm:w-[240px] cursor-pointer p-[1px] bg-team-card w-full rounded-[25px] group hover:scale-y-110 origin-bottom transition-all duration-300"
+              className="max-w-[424px] max-lg:max-w-[360px] max-sm:w-[240px] cursor-pointer p-[1px] bg-team-card w-full rounded-[25px] group origin-bottom transition-all duration-300"
             >
               <div className="bg-off-white card-blur justify-center items-center flex flex-col pb-5 rounded-[25px]">
                 <img
