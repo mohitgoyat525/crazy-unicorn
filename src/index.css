@@ -41,6 +41,10 @@ body {
   animation: moveCloudRight 10s linear infinite;
 }
 
+.cloud-animation-right {
+  animation: moveCloudRight 20s linear infinite;
+}
+
 @keyframes floatStar {
   0% {
     transform: translateY(0px);
@@ -65,4 +69,15 @@ body {
     rgba(182, 42, 255, 0.5) -82.68%,
     rgba(255, 13, 242, 0.5) 143.2%
   );
+}
+
+.border-linear-gradient {
+  background: linear-gradient(100.7deg, #b62aff -82.68%, #ff0df2 143.2%);
+}
+
+.linear-gradient {
+  background: linear-gradient(100.7deg, #b62aff -82.68%, #ff0df2 143.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

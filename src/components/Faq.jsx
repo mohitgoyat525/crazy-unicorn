@@ -12,16 +12,16 @@ const Faq = () => {
   }
 
   return (
-    <div className='pb-[265px] pt-[107px] max-lg:py-20 max-md:py-[60px] relative'>
+    <div className='pb-[265px] pt-[107px] max-lg:py-[60px] relative'>
       <img
         src={StarsFirst}
         alt='stars'
-        className='absolute left-0 top-[-20%] -z-10 max-md:hidden star-animation'
+        className='absolute left-0 top-[-20%] -z-10 max-md:h-[400px] star-animation pointer-events-none'
       />
       <img
         src={StarsSecond}
         alt='stars'
-        className='absolute right-0 top-24 -z-10 max-md:hidden star-animation'
+        className='absolute right-0 top-24 -z-10 max-md:h-[400px] star-animation pointer-events-none'
       />
 
       <div className='max-w-[1221px] mx-auto px-4'>

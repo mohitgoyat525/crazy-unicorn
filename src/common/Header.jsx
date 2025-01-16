@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <nav className="flex items-center justify-between">
       <a href="/">
-        <img src={headerLogo} alt="logo" className="pt-[6px]" />
+        <img src={headerLogo} alt="logo" className="pt-[6px] relative z-40" />
       </a>
       <div
         className={`flex items-center gap-4 max-lg:flex-col max-lg:justify-center max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:h-screen max-lg:bg-white max-lg:z-[90] transition-transform duration-300 ${
@@ -40,7 +40,7 @@ const Header = () => {
               <a
                 href={obj.link}
                 onClick={handler}
-                className="text-custom-2xl leading-[25px] font-normal text-black transition-all ease-linear duration-300 font-pinkyUnicorn"
+                className="text-custom-2xl navbar-link leading-[25px] font-normal text-black transition-all ease-linear duration-300 font-pinkyUnicorn"
               >
                 {obj.name}
               </a>
@@ -48,7 +48,12 @@ const Header = () => {
           ))}
           <li className="lg:hidden flex items-center gap-4">
             {SOCIAL_LIST.map((item, index) => (
-              <a key={index} href={item.link} target="_blank">
+              <a
+                key={index}
+                href={item.link}
+                target="_blank"
+                className="transition-all ease-linear duration-300 hover:scale-110"
+              >
                 {item.social}
               </a>
             ))}
@@ -57,7 +62,12 @@ const Header = () => {
       </div>
       <div className="flex items-center gap-4 max-lg:hidden">
         {SOCIAL_LIST.map((item, index) => (
-          <a key={index} href={item.link} target="_blank">
+          <a
+            key={index}
+            href={item.link}
+            target="_blank"
+            className="transition-all ease-linear duration-300 hover:scale-110"
+          >
             {item.social}
           </a>
         ))}

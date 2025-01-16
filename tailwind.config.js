@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "phase-bg": "url('/src/assets/images/png/phase-bg-cloud-img.png')",
+        "team-card": "linear-gradient(100.7deg, rgba(182, 42, 255, 0.5) -82.68%, rgba(255, 13, 242, 0.5) 143.2%)"
+      },
       fontSize: {
         "custom-2xl": "22px",
         "custom-7xl": "70px",

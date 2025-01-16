@@ -1,6 +1,6 @@
 
-import { DiscordIcon, InstagramIcon, TwitterIcon } from "../utils/icons";
-import TeamHorse from '../assets/images/webp/jerome-bell.webp'
+import { DiscordIcon, InstagramIcon, TwitterIcon } from "./icons";
+import HorseImage from '../assets/images/webp/jerome-bell.webp'
 
 export const NAVBAR_LIST = [
   { name: "Home", link: "#home" },
@@ -26,19 +26,19 @@ export const SOCIAL_LIST = [
   },
 ];
 
-export const TEAM_DATA_LIST = [
+export const TEAM_LIST = [
     {
-        image: TeamHorse,
+        image: HorseImage,
         title: 'Jerome Bell',
         description: '(CEO)'
     },
     {
-        image: TeamHorse,
+        image: HorseImage,
         title: 'Jenny Wilson',
         description: '(Founder)'
     },
     {
-        image: TeamHorse,
+        image: HorseImage,
         title: 'Ralph Edwards',
         description: '(Team Member)'
     }
@@ -89,3 +89,12 @@ export const SOCIAL_LINKS = [
         link: 'https://discord.com/'
     },
 ];
+
+export const ROADMAP_LIST = [
+  { title: "Phase 1", description: "Sed lectus ut elit id lectus diam massa nisl pretium. Sagittis, adipiscing maecenas lorem ullamcorper. Faucibus netus sed varius loborti orbi sit sit magna lorem arcu." },
+  { title: "Phase 2", description: "Sed lectus ut elit id lectus diam massa nisl pretium. Sagittis, adipiscing maecenas lorem ullamcorper. Faucibus netus sed varius loborti orbi sit sit magna lorem arcu." },
+  { title: "Phase 3", description: "Sed lectus ut elit id lectus diam massa nisl pretium. Sagittis, adipiscing maecenas lorem ullamcorper. Faucibus netus sed varius loborti orbi sit sit magna lorem arcu." },
+  { title: "Phase 4", description: "Sed lectus ut elit id lectus diam massa nisl pretium. Sagittis, adipiscing maecenas lorem ullamcorper. Faucibus netus sed varius loborti orbi sit sit magna lorem arcu." },
+  { title: "Phase 5", description: "Sed lectus ut elit id lectus diam massa nisl pretium. Sagittis, adipiscing maecenas lorem ullamcorper. Faucibus netus sed varius loborti orbi sit sit magna lorem arcu." },
+];
+
