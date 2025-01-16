@@ -17,6 +17,11 @@ module.exports = {
         lg: '1025px',
         md: '770px'
       },
+      colors: {
+        gray: "#4d4d4d",
+        purple: "#b62aff",
+        'dark-purple': "#ff0df2",
+      },
     },
   },
   plugins: [],

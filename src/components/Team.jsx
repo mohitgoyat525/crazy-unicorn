@@ -4,28 +4,26 @@ import { TEAM_DATA_LIST } from '../utils/helper'
 
 const Team = () => {
   return (
-    <div className='pt-[83px] pb-[100px]'>
+    <div className='pt-[83px] pb-[100px] max-lg:py-[60px]'>
       <div className='max-w-[1353px] mx-auto px-4'>
-        <SubHeading text={'Team'} />
-        <div className='flex items-center justify-center gap-6 max-xl:flex-wrap pt-[190px] max-lg:pt-20'>
+        <SubHeading text={'Team'} />;
+        <div className='flex gap-[23.64px] max-xl:flex-wrap max-xl:justify-center max-xl:px-5'>
           {TEAM_DATA_LIST.map((obj, i) => (
             <div
-              className='px-[56px] rounded-[25px] group pb-5 text-center bg-white pink-border'
               key={i}
+              className='max-w-[424px] group hover:scale-y-110 cursor-pointer origin-bottom transition-all duration-300 p-[1px] bg-gradient-to-r from-purple to-dark-purple w-full rounded-[25px]'
             >
-              <div className='rounded-[25px]'>
+              <div className='bg-white justify-center items-center flex flex-col pb-5 rounded-[25px]'>
                 <img
-                  className='pointer-events-none max-w-[312px] mx-auto -mt-9 transition-all ease-in-out duration-300'
+                  className='max-w-[312px] -mt-9 group-hover:scale-[1.20] origin-bottom transition-all duration-300'
                   src={obj.image}
                   alt='team-image'
                 />
-                <h2 className='text-center font-pinkyUnicorn text-[40px] leading-[46px] pb-[13px] pt-7'>
+                <h3 className='text-custom-4xl font-pinkyUnicorn max-lg:text-4xl max-md:text-3xl max-sm:text-2xl text-center'>
                   {obj.title}
-                </h2>
+                </h3>
+                <p className='text-custom-2xl leading-[38px]'>{obj.description}</p>
               </div>
-              <p className='text-center text-[22px] leading-[38px]'>
-                {obj.description}
-              </p>
             </div>
           ))}
         </div>

@@ -16,12 +16,12 @@ const Faq = () => {
       <img
         src={StarsFirst}
         alt='stars'
-        className='absolute left-0 top-[-20%] max-lg:hidden'
+        className='absolute left-0 top-[-20%] -z-10 max-md:hidden star-animation'
       />
       <img
         src={StarsSecond}
         alt='stars'
-        className='absolute right-0 top-24 max-lg:hidden'
+        className='absolute right-0 top-24 -z-10 max-md:hidden star-animation'
       />
 
       <div className='max-w-[1221px] mx-auto px-4'>
@@ -31,7 +31,7 @@ const Faq = () => {
             <div key={i} className={` ${active === i ? '' : ''}`}>
               <button
                 onClick={() => toggle(i)}
-                className={`flex items-center justify-between w-full font-pinkyUnicorn font-normal text-[40px] max-lg:text-4xl max-md:text-3xl max-md:leading-9 max-sm:text-[18px] max-sm:leading-[18px] leading-[46px] text-left ${
+                className={`flex items-center justify-between w-full font-pinkyUnicorn font-normal text-custom-4xl max-lg:text-4xl max-md:text-3xl max-md:leading-9 max-sm:text-[18px] max-sm:leading-[18px] leading-[46px] text-left ${
                   active === i ? 'pb-[10px]' : ''
                 }`}
               >
@@ -45,7 +45,7 @@ const Faq = () => {
                 </span>
               </button>
               <p
-                className={`max-w-[769px] font-normal text-[22px] max-md:text-base max-lg:text-xl max-sm:text-sm leading-[38.28px] transition-all duration-300 overflow-hidden text-black ${
+                className={`max-w-[769px] font-normal text-custom-2xl max-md:text-base max-lg:text-xl max-sm:text-sm leading-[38.28px] transition-all duration-300 overflow-hidden text-black ${
                   active === i
                     ? 'max-h-32 border-b border-black border-opacity-30 pb-[22px] max-lg:pb-5 max-md:pb-3'
                     : 'max-h-0'

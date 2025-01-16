@@ -1,42 +1,94 @@
-import React from 'react'
+import React, { useState } from 'react'
+import emailjs from 'emailjs-com'
 import FooterLogo from '../assets/images/webp/footer-logo.webp'
 import { SOCIAL_LINKS } from '../utils/helper'
 import { MailIcon } from '../utils/icons'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import CustomButton from './CustomButton'
+import StarFirst from '../assets/images/webp/footer-stars-first.webp'
+import StarSecond from '../assets/images/webp/footer-stars-second.webp'
+import Rainbow from '../assets/images/webp/footer-rainbow.webp'
 
 const Footer = () => {
+  const [formValue, setFormValue] = useState({
+    email: ''
+  })
+  const SERVICE_ID = 'service_7hygphk'
+  const TEMPLATE_ID = 'template_bj6dsyy'
+  const USER_ID = 'WQwoCN3QeNexwmXQ_'
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, formValue, USER_ID)
+      .then(() => {
+        toast.success('Submit Successfully')
+        setFormValue({ email: '' })
+      })
+      .catch(error => {
+        toast.error('Submission Failed')
+        console.error('Error:', error)
+      })
+  }
+
   return (
-    <div className='flex items-center flex-col justify-center'>
-      <div className=''>
-        <h2 className='font-pinkyUnicorn text-[70px] leading-[105px] text-center'>
+    <div className='flex items-center flex-col justify-center max-lg:pt-[60px] relative'>
+      <img src={StarFirst} alt='stars' className='absolute bottom-[250px] left-0 -z-10 max-md:hidden star-animation' />
+      <img src={StarSecond} alt='stars' className='absolute bottom-0 left-0 -z-10 max-md:hidden star-animation' />
+      {/* <img src={Rainbow} alt='rainbow' /> */}
+      <div className='max-w-[856px] mx-auto px-4'>
+        <h2 className='font-pinkyUnicorn text-custom-7xl leading-[105px] text-center max-md:text-4xl max-sm:text-3xl max-sm:leading-8 max-md:leading-10'>
           Sign up for the latest news
         </h2>
-        <p className='text-[22px] leading-[38px] text-center'>
+        <p className='text-custom-2xl leading-[38px] text-center pb-[33px] max-lg:pb-5 max-w-[659px] mx-auto max-lg:text-base max-sm:pt-1'>
           Convallis et vel cras odio mi, volutpat sed ultrices. Sed amet sed
           aenean egestas ut sit.
         </p>
-        <form>
-          <input type='text' className='outline-none' />
-          <MailIcon />
-        </form>
+        <div className='bg-gradient-to-r from-purple to-dark-purple rounded-[10px] max-w-[523px] mx-auto p-[1px]'>
+          <form
+            onSubmit={handleSubmit}
+            action='#'
+            className='bg-white py-2 pl-[19px] pr-[9px] rounded-[10px] w-full flex items-center'
+          >
+            <MailIcon />
+            <input
+              required
+              value={formValue.email}
+              onChange={e =>
+                setFormValue({ ...formValue, email: e.target.value })
+              }
+              id='email'
+              type='email'
+              placeholder='Your email'
+              className='px-[9px] h-full w-[60%] py-[15px] outline-none'
+            />
+            <CustomButton
+              text='subscribe'
+              buttonClass='!py-[9.5px] !px-[28.6px] !text-[25px] !leading-[28.76px]'
+              myClass='!h-[49px] !w-[156px] !ml-auto'
+            />
+          </form>
+        </div>
         <a href='#footerlogo'>
           <img
             src={FooterLogo}
             alt='footer-logo'
-            className='max-w-[172px] pt-[287px] mx-auto pointer-events-none'
+            className='max-w-[172px] max-sm:max-w-[100px] pt-[287px] max-lg:pt-[200px] max-md:pt-[140px] max-sm:pt-20 mx-auto pointer-events-none'
           />
         </a>
-        <div className='flex items-center gap-[21px] justify-center pt-[60px]'>
+        <div className='flex items-center gap-[21px] max-md:gap-4 justify-center pt-[60px] max-lg:pt-10 max-md:pt-6'>
           {SOCIAL_LINKS.map((obj, i) => (
             <a
               className='hover:scale-110 duration-300 transition-all'
               href={obj.link}
               target='_blank'
             >
-              <div>{obj.social}</div>
+              <div key={i}>{obj.social}</div>
             </a>
           ))}
         </div>
-        <p className='text-center text-xl leading-[23px] opacity-70 py-[63px]'>
+        <p className='text-center text-xl max-md:text-base leading-[23px] opacity-70 py-[63px] max-lg:py-10 max-md:py-5'>
           Copyright@CrazyUnicorn.com
         </p>
       </div>
