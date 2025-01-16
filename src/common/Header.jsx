@@ -40,7 +40,7 @@ const Header = () => {
               <a
                 href={obj.link}
                 onClick={handler}
-                className="text-custom-2xl navbar-link leading-[25px] font-normal text-black transition-all ease-linear duration-300 font-pinkyUnicorn"
+                className="text-custom-2xl flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:-bottom-3 after:h-2 after:left-0 after:bg-bg-header-line after:bg-cover after:bg-center after:max-w-16 leading-[25px] font-normal text-black transition-all ease-linear duration-300 font-pinkyUnicorn"
               >
                 {obj.name}
               </a>
