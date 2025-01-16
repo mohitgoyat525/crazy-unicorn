@@ -42,6 +42,7 @@ module.exports = {
         gray: "#4d4d4d",
         purple: "#b62aff",
         "dark-purple": "#ff0df2",
+        "off-white": "#FDF3FC",
       },
     },
   },

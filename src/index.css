@@ -64,3 +64,7 @@ body {
 .star-animation {
   animation: floatStar 4s ease-in-out infinite;
 }
+
+.card-blur{
+  backdrop-filter: blur(164.1912841796875px);
+}

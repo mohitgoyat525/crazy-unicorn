@@ -22,7 +22,7 @@ const Team = () => {
               key={i}
               className="max-w-[424px] max-lg:max-w-[360px] max-sm:w-[240px] cursor-pointer p-[1px] bg-team-card w-full rounded-[25px] group hover:scale-y-110 origin-bottom transition-all duration-300"
             >
-              <div className="bg-white justify-center items-center flex flex-col pb-5 rounded-[25px]">
+              <div className="bg-off-white card-blur justify-center items-center flex flex-col pb-5 rounded-[25px]">
                 <img
                   className="max-w-[312px] max-lg:max-w-[240px] max-sm:w-[160px] -mt-9 max-md:-mt-7 max-sm:-mt-5 group-hover:scale-[1.20] max-md:group-hover:scale-[1] origin-bottom transition-all duration-300 pointer-events-none"
                   src={obj.image}
