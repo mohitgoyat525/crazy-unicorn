@@ -17,15 +17,15 @@ const RoadMap = () => {
       <img
         src={BottomLeftStar}
         alt="stars"
-        className="absolute bottom-0 left-0 star-animation max-[767px]:max-w-[198px]"
+        className="absolute bottom-0 left-0 star-animation max-[767px]:max-w-[198px] -z-[1] pointer-events-none"
       />
       <img
         src={TopRightStar}
         alt="stars"
-        className=" absolute top-0 right-0 star-animation max-[767px]:max-w-[198px]"
+        className=" absolute top-0 right-0 star-animation max-[767px]:max-w-[198px] -z-[1] pointer-events-none"
       />
       <img
-        className="absolute right-0 bottom-0 max-2xl:max-w-60 max-xl:max-w-48 max-[767px]:max-w-[198px] max-[767px]:-bottom-10 -z-[1] star-animation"
+        className="absolute right-0 bottom-0 pointer-events-none max-2xl:max-w-60 max-xl:max-w-48 max-[767px]:max-w-[198px] max-[767px]:-bottom-10 -z-[1] star-animation"
         src={LeftStars}
         alt="start"
       />

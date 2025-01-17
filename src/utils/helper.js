@@ -3,12 +3,12 @@ import { DiscordIcon, InstagramIcon, TwitterIcon } from "./icons";
 import HorseImage from '../assets/images/webp/jerome-bell.webp'
 
 export const NAVBAR_LIST = [
-  { name: "Home", link: "#home" },
-  { name: "Story", link: "#story" },
-  { name: "About", link: "#about" },
-  { name: "Roadmap", link: "#roadmap" },
-  { name: "Team", link: "#team" },
-  { name: "FAQs", link: "#faqs" },
+  { title: "Home", link: "#home" },
+  { title: "Story", link: "#story" },
+  { title: "About", link: "#about" },
+  { title: "Roadmap", link: "#roadmap" },
+  { title: "Team", link: "#team" },
+  { title: "FAQs", link: "#faqs" },
 ];
 
 export const TEAM_LIST = [

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import headerLogo from '../assets/images/svg/header-logo-icon.svg'
-import { NAVBAR_LIST, SOCIAL_LINKS, SOCIAL_LIST } from '../utils/helper';
+import { NAVBAR_LIST, SOCIAL_LINKS} from '../utils/helper';
 
 const Header = () => {
       const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,7 @@ const Header = () => {
       };
       useEffect(() => {
         const handleOverflow = () => {
-          if (isOpen && window.innerWidth < 1024) {
+          if (isOpen && window.innerWidth < 1025) {
             document.body.classList.add("overflow-hidden");
           } else {
             document.body.classList.remove("overflow-hidden");
@@ -42,7 +42,7 @@ const Header = () => {
                 onClick={handler}
                 className="text-custom-2xl flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:-bottom-3 after:h-2 after:left-0 after:bg-bg-header-line after:bg-cover after:bg-center after:max-w-16 leading-[25px] font-normal text-black transition-all ease-linear duration-300 font-pinkyUnicorn"
               >
-                {obj.name}
+                {obj.title}
               </a>
             </li>
           ))}
