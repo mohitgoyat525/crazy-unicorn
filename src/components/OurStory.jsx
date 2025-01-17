@@ -22,7 +22,7 @@ const OurStory = () => {
       <img
         src={RightStars}
         alt="stars"
-        className="w-full max-w-[200px] absolute left-0 top-0 star-animation max-sm:hidden"
+        className="w-full max-w-[200px] absolute left-0 top-0 star-animation max-sm:hidden pointer-events-none"
       />
       <div className="max-w-[1361px] mx-auto px-4">
         <SubHeading text="Our Story" />
